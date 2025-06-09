@@ -1,0 +1,118 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f0f2f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading Styling */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+h1::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #3498db;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+thead {
+    background-color: #3498db;
+    color: white;
+}
+
+th, td {
+    padding: 14px 20px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #ecf0f1;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Email and Phone styling */
+td a {
+    color: #2980b9;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+td a:hover {
+    text-decoration: underline;
+    color: #1c5980;
+}
+
+/* Fallback paragraph */
+#specialp {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #e74c3c;
+    font-weight: 500;
+    margin-top: 30px;
+    animation: slideDown 0.5s ease-in;
+}
+
+/* Animation */
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    th, td {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}

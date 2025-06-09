@@ -1,0 +1,82 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #d9a7c7, #fffcdc);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Centered container */
+.container {
+    max-width: 700px;
+    width: 90%;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Heading styles */
+h1 {
+    font-size: 2.8rem;
+    color: #2e2e2e;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+/* Subtitle */
+p {
+    font-size: 1.2rem;
+    color: #4a4a4a;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #6a11cb;
+    background-image: linear-gradient(315deg, #6a11cb 0%, #2575fc 74%);
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    margin: 10px;
+    box-shadow: 0 4px 14px rgba(106, 17, 203, 0.3);
+    tet
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(37, 117, 252, 0.4);
+    background-image: linear-gradient(315deg, #2575fc 0%, #6a11cb 74%);
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .btn-primary {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+a.btn {
+    text-decoration: none !important;
+}
